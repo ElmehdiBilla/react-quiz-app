@@ -9,17 +9,16 @@ const App = () => {
   const addAnswer = (answer) => {
     setAnswers([...answers,answer]);
     
-    // let filtredAnswers;
-    // if(answers.some(ans=>ans.question===answer.question)){
-    //   filtredAnswers=answers.filter(ans=>ans.question!==answer.question)
-    //   if(filtredAnswers){ 
-    //     setAnswers([...filtredAnswers,answer]);
-    //   }
-    // }
-    // else{
-    //   setAnswers([...answers,answer]);
-    // }
-    console.log(answers)
+    let filtredAnswers;
+    if(answers.some(ans=>ans.question===answer.question)){
+      filtredAnswers=answers.filter(ans=>ans.question!==answer.question)
+      if(filtredAnswers){ 
+        setAnswers([...filtredAnswers,answer]);
+      }
+    }
+    else{
+      setAnswers([...answers,answer]);
+    }
   }
 
   return (
