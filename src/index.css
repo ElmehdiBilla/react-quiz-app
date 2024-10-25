@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: inter;
+}
+.quiz-card{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+.option{
+    color: #333;
+    background-color: #ccc;
+    padding: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 0.5rem;
+    margin-block: 0.3rem;
+    cursor: pointer;
+}
+.option:hover:not(.selected-option){
+    color: #222;
+    background-color: #bbb;
+    border: 1px solid #aaa;
+}
+.selected-option{
+    background-color: #73EC8B;
+    border: 1px solid #347928;
+}
+.quiz-card h3{
+    margin-block: 1rem;
+}
+.quiz-card ul{
+    list-style: none;
+}
