@@ -15,7 +15,6 @@ function Quiz (props) {
             answer:question.options[index],
             correct:question.options[index]===questionAnswer,
         }
-        console.log(answer)
         props.addAnswer(answer)
     }
 
