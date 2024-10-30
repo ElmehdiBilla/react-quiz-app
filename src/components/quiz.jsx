@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React , {useEffect, useState} from "react";
 
 function Quiz (props) {
 
@@ -18,6 +18,9 @@ function Quiz (props) {
         props.addAnswer(answer)
     }
 
+    useEffect(() => {
+        setSelectedOption(null)
+    },[question])
     return (
 
         <div className="quiz-container">
